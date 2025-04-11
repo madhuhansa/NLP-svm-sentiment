@@ -24,8 +24,8 @@ NLP-svm-sentiment/
 ├── svm_model.pkl                # Trained SVM model
 ├── tfidf_vectorizer.pkl         # Saved TF-IDF vectorizer
 ├── main.py                      # Script to load model and predict new sentences
-├── IMDB Dataset.ipynb             # Notebook to train and save model
-├── IMDB Dataset.csv                     # Dataset (e.g., movie reviews)
+├── IMDB Dataset.ipynb           # Notebook to train and save model
+├── IMDB Dataset.csv             # Dataset (e.g., movie reviews)
 └── README.md                    # Project documentation
 ```
 
@@ -33,14 +33,14 @@ NLP-svm-sentiment/
 
 ## 🛠️ How It Works
 
-### 1. Train the Model (save_model.ipynb)
+### 1. Train the Model (`IMDB Dataset.ipynb`)
 
 - Load and clean the dataset  
 - Vectorize the text using `TfidfVectorizer`  
 - Train the model using `LinearSVC`  
 - Save the model and vectorizer with `joblib`
 
-### 2. Predict New Sentences (main.py)
+### 2. Predict New Sentences (`main.py`)
 
 - Load the saved model and vectorizer  
 - Transform new text with the vectorizer  
@@ -48,6 +48,17 @@ NLP-svm-sentiment/
 
 ---
 
+## 📈 Model Performance
+
+| Model                    | Accuracy Score       |
+|-------------------------|----------------------|
+| Logistic Regression     | 0.8868               |
+| Naive Bayes             | 0.8830               |
+| Support Vector Machine  | **0.9021** (Best)    |
+
+✅ **SVM outperformed the other models** in this project.
+
+---
 
 ## 🧰 Requirements
 
@@ -57,7 +68,7 @@ NLP-svm-sentiment/
 - joblib
 - numpy
 
-
+---
 
 ## 📊 Dataset Used
 
@@ -77,6 +88,4 @@ You can use any binary sentiment dataset. For example:
 
 ## 🧑‍💻 Author
 
-Made with ❤️ by [yahan madhuhansa]
-
-
+Made with ❤️ by **[yahan madhuhansa]**
